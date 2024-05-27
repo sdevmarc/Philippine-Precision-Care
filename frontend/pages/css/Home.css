@@ -1,0 +1,17 @@
+.hero {
+    background-image: url('https://media.philstar.com/photos/2023/01/17/sgd-1_2023-01-17_08-07-55_gallery.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+}
