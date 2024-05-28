@@ -7,6 +7,7 @@
     <title>PPC | Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css//Login.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
 
 <body>
