@@ -5,11 +5,11 @@
 }
 
 ::-webkit-scrollbar {
+    width: 1rem; /* Adjust the width to be more reasonable */
     background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    width: 5rem;
     background: #000;
 }
 
