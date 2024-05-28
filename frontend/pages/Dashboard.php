@@ -61,7 +61,7 @@
 
             <button
                 class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
-                <a href="/Philippine-Precision-Care/backend/logout.php"
+                <a href="../../backend/logout.php"
                     style="text-decoration: none; color: white;">Logout</a>
             </button>
 
