@@ -47,9 +47,11 @@
                     </div>
                 </div>
 
+                <form action="../../backend/logout.php">
                 <button class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
                     Logout
                 </button>
+            </form>
             </div>
         </header>
         <div class="w-full h-[93vh] flex flex-col justify-start items-center px-[5rem]">
