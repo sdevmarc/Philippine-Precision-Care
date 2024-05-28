@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="./css/Dashboard.css">
     <link rel="stylesheet" href="../index.css">
 </head>
+
 <body>
-<header class="w-full h-[7vh] px-[10rem] flex justify-between items-center z-[2] bg-white">
+    <header class="w-full h-[7vh] px-[10rem] flex justify-between items-center z-[2] bg-white">
         <div class="overlow-hidden w-[30%] h-full ">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
@@ -19,10 +21,10 @@
                     Human Resource
                 </button>
                 <div class="hr-content absolute top-[1.5rem] w-[13rem] left-[-2rem] hidden bg-[#a30000] rounded-xl py-[1rem] px-[1rem]">
-                    <a href="" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <a href="./ViewEmployees.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                         View Employees
                     </a>
-                    <a href="" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <a href="./ManageEmployees.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                         Manage Employees
                     </a>
                 </div>
@@ -33,7 +35,7 @@
                     Finance
                 </button>
                 <div class="hr-content absolute top-[1.5rem] w-[13rem] left-[-4rem] hidden bg-[#a30000] rounded-xl py-[1rem] px-[1rem]">
-                    <a href="" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <a href="./ManageFinance.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                         Manage Finance
                     </a>
                 </div>
@@ -44,7 +46,7 @@
                     Appointment
                 </button>
                 <div class="hr-content absolute top-[1.5rem] w-[13rem] left-[-3rem] hidden bg-[#a30000] rounded-xl py-[1rem] px-[1rem]">
-                    <a href="" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <a href="./ManageAppointments.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                         Manage Appointments
                     </a>
                 </div>
@@ -59,4 +61,5 @@
         <h1 class="text-black font-[700] text-[5rem]">Finance</h1>
     </div>s
 </body>
+
 </html>
