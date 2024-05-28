@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPC | Employees</title>
+    <title>PPC | Human Resource</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/Dashboard.css">
     <link rel="stylesheet" href="../index.css">
@@ -58,7 +58,7 @@
         </div>
     </header>
     <div class="w-full h-[93vh] flex flex-col justify-center items-center gap-[1rem]">
-        <h1 class="text-black font-[700] text-[5rem]">View Employees</h1>
+        <h1 class="text-black font-[700] text-[5rem]">Human Resource</h1>
     </div>
 </body>
 
