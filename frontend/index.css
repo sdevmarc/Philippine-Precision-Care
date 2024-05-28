@@ -3,3 +3,16 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5rem;
+    background: #000;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
