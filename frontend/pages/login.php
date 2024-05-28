@@ -15,15 +15,35 @@
             <h1 class="text-white text-[5rem] font-[700] z-[1]">Philippine Precision Care Portal.</h1>
         </div>
         <div class="w-[40%] h-full flex justify-center items-center">
-            <form action="" method="POST" class="w-[30rem] h-[35rem] rounded-[1rem] shadow-[inset_0_10px_15px_-3px_rgba(0,0,0,0.1)] px-[3rem] py-[3rem] flex flex-col justify-evenly items-center">
+            <form action="../../backend/login.php" method="POST" class="w-[30rem] h-[35rem] rounded-[1rem] shadow-[inset_0_10px_15px_-3px_rgba(0,0,0,0.1)] px-[3rem] py-[3rem] flex flex-col justify-evenly items-center">
                 <h1 class="text-black font-[700] text-[2rem]">Login</h1>
+                <?php if (isset($_GET['error'])): ?>
+                    <div class="w-full py-[1rem] text-red-600">
+                        <?php 
+                            switch ($_GET['error']) {
+                                case 'emptyfields':
+                                    echo 'Please fill in all fields.';
+                                    break;
+                                case 'invalidpassword':
+                                    echo 'Invalid password.';
+                                    break;
+                                case 'nouser':
+                                    echo 'No user found with that username.';
+                                    break;
+                                case 'inactiveuser':
+                                    echo 'This account is inactive.';
+                                    break;
+                            }
+                        ?>
+                    </div>
+                <?php endif; ?>
                 <div class="w-full py-[1rem] flex flex-col gap-[.5rem]">
                     <h1 class="text-black font-[600] text-[1.1rem]">Username</h1>
-                    <input type="text" placeholder="Enter your username..." class="w-full h-[3rem] px-[1rem] outline-none border border-black rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+                    <input type="text" name="username" placeholder="Enter your username..." class="w-full h-[3rem] px-[1rem] outline-none border border-black rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
                 </div>
                 <div class="w-full py-[1rem] flex flex-col gap-[.5rem]">
                     <h1 class="text-black font-[600] text-[1.1rem]">Password</h1>
-                    <input type="text" placeholder="Enter your password..." class="w-full h-[3rem] px-[1rem] outline-none border border-black rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+                    <input type="password" name="password" placeholder="Enter your password..." class="w-full h-[3rem] px-[1rem] outline-none border border-black rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
                 </div>
                 <button name="login" type="submit" class="w-full h-[2.5rem] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6] bg-[#a30000] text-white">
                     Login
@@ -34,11 +54,3 @@
 </body>
 
 </html>
-
-<?php
-    if (isset($_POST['login'])) {
-
-        header('Location: /philippine-precision-care/frontend/pages/Dashboard.php');
-        exit();
-    }
-?>
