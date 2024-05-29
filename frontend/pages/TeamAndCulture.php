@@ -38,7 +38,7 @@
             </a>
         </div>
     </header>
-    <div class="w-full py-[5rem] bg-[#ffffff] px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[20rem] flex flex-col items-center">
+    <div class="w-full py-[5rem] bg-[#ffffff] px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[20rem] flex flex-col items-center gap-[3rem]">
         <h1 class="text-[#c10000] font-bold text-[2rem] sm:text-[3rem] md:text-[4rem]">Our Team & Culture</h1>
         <div class="w-full flex flex-col items-start gap-[2rem]">
             <div class="w-full flex justify-evenly items-center gap-[2rem]">
@@ -68,7 +68,7 @@
                 </div>
 
             </div>
-            <h2 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-black font-bold">Meet Our Team</h2>
+            <h2 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-black font-bold mt-[4rem]">Meet Our Team</h2>
             <p class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-justify">
                 Our team comprises dedicated professionals committed to providing the best healthcare services. With a blend of experienced specialists and passionate young professionals, we ensure top-notch care for all our patients.
             </p>
