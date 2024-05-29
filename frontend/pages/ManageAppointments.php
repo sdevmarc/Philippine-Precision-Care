@@ -25,8 +25,6 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($link);
 
-// Return the appointments data as JSON
-json_encode($appointments);
 ?>
 
 <!DOCTYPE html>
@@ -91,12 +89,13 @@ json_encode($appointments);
         <div class="w-full h-[10%] flex justify-between items-center">
             <h1 class="my-[1rem] text-black text-[2rem] font-[700]">MANAGE APPOINTMENTS</h1>
             <div class="w-[60%] h-[70%] flex justify-between items-center">
-                <select name="" id="" class="w-[15%] h-full border border-black text-[.8rem] text-center rounded-xl">
-                    <option value="sample">Sampel Lastname</option>
-                    <option value="sample">Sampel Firstname</option>
-                    <option value="sample">Sampel Middlename</option>
+                <select name="" id="filterSelect" class="w-[15%] h-full border border-black text-[.8rem] text-center rounded-xl">
+                    <option value="0">Select a filter</option>
+                    <option value="1">First Name</option>
+                    <option value="2">Middle Name</option>
+                    <option value="3">Last Name</option>
                 </select>
-                <input type="text" placeholder="Search here..." class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
+                <input type="text" id="searchInput" placeholder="Search here..." class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
             </div>
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
@@ -113,11 +112,8 @@ json_encode($appointments);
                     </tr>
                 </thead>
                 <tbody>
-
                     <?php
-
                     if (isset($appointments)) {
-
                         foreach ($appointments as $appointment) {
                             echo "<tr class='border border text-black'>";
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>" . $appointment['id'] . "</td>";
@@ -129,54 +125,18 @@ json_encode($appointments);
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>";
                             echo "<button class='accept-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#3076f0] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='showAcceptModal(" . $appointment['id'] . ")'>Accept</button>";
                             echo "<button class='decline-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#de5021] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='showDeclineModal(" . $appointment['id'] . ")'>Decline</button>";
-
                             echo "</td>";
                             echo "</tr>";
                         }
                     } else {
-
                         echo "<tr><td colspan='7' class='text-center'>No appointments found</td></tr>";
                     }
                     ?>
                 </tbody>
             </table>
         </div>
-        <script>
-            function showAcceptModal(id) {
-                const modal = document.getElementById('acceptModal');
-                modal.classList.remove('hidden');
-                // You can perform additional actions here, such as passing the appointment ID to the modal
-            }
-
-            function hideAcceptModal() {
-                const modal = document.getElementById('acceptModal');
-                modal.classList.add('hidden');
-            }
-
-            function showDeclineModal(id) {
-                const modal = document.getElementById('declineModal');
-                modal.classList.remove('hidden');
-                // You can perform additional actions here, such as passing the appointment ID to the modal
-            }
-
-            function hideDeclineModal() {
-                const modal = document.getElementById('declineModal');
-                modal.classList.add('hidden');
-            }
-
-            function acceptAppointment() {
-                // Perform actions when accepting appointment, such as sending an email
-                // You can use AJAX to send a request to the server to accept the appointment
-                // After successful acceptance, you may want to reload the page or update the UI
-            }
-
-            function declineAppointment() {
-                // Perform actions when declining appointment
-                // You can use AJAX to send a request to the server to decline the appointment
-                // After successful decline, you may want to reload the page or update the UI
-            }
-        </script>
     </div>
+
     <!-- Accept Modal -->
     <div id="acceptModal" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-50 flex justify-center items-center z-[10]">
         <div class="bg-white p-8 rounded-md">
@@ -188,7 +148,6 @@ json_encode($appointments);
         </div>
     </div>
 
-
     <!-- Decline Modal -->
     <div id="declineModal" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-50 flex justify-center items-center z-[10]">
         <div class="bg-white p-8 rounded-md">
@@ -199,3 +158,73 @@ json_encode($appointments);
             </div>
         </div>
     </div>
+
+    <script>
+        function showAcceptModal(id) {
+            const modal = document.getElementById('acceptModal');
+            modal.classList.remove('hidden');
+        }
+
+        function hideAcceptModal() {
+            const modal = document.getElementById('acceptModal');
+            modal.classList.add('hidden');
+        }
+
+        function showDeclineModal(id) {
+            const modal = document.getElementById('declineModal');
+            modal.classList.remove('hidden');
+        }
+
+        function hideDeclineModal() {
+            const modal = document.getElementById('declineModal');
+            modal.classList.add('hidden');
+        }
+
+        function acceptAppointment() {
+            // Perform actions when accepting appointment, such as sending an email
+        }
+
+        function declineAppointment() {
+            // Perform actions when declining appointment
+        }
+
+        const searchInput = document.getElementById('searchInput');
+        const filterSelect = document.getElementById('filterSelect');
+
+        searchInput.addEventListener('input', function() {
+            const filter = searchInput.value.toLowerCase();
+            const filterBy = parseInt(filterSelect.value);
+            const table = document.getElementById('appointmentsTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+
+                if (filterBy > 0 && cells[filterBy]) {
+                    const cellText = cells[filterBy].textContent || cells[filterBy].innerText;
+                    if (cellText.toLowerCase().indexOf(filter) > -1) {
+                        match = true;
+                    }
+                } else {
+                    for (let j = 0; j < cells.length; j++) {
+                        if (cells[j]) {
+                            const cellText = cells[j].textContent || cells[j].innerText;
+                            if (cellText.toLowerCase().indexOf(filter) > -1) {
+                                match = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                if (match) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
