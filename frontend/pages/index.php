@@ -20,8 +20,8 @@
         <div class="overlow-hidden w-[30%] h-full ">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
-        <div class="w-[70%] h-full flex justify-end items-center gap-[.5rem]">
-            <a href="./index.php" class="text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
+        <div class="navs w-[70%] h-full flex justify-end items-center gap-[.5rem]">
+            <a href="./index.php" class="active text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
                 Home
             </a>
             <a href="./Services.php" class="text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
