@@ -181,8 +181,8 @@ mysqli_close($link);
     <div class="bg-white p-8 rounded-md">
         <p>Are you sure you want to accept this appointment?</p>
         <div class="flex justify-center mt-4">
-            <button onclick="acceptAppointment()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
-            <button onclick="hideAcceptModal()" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">No</button>
+            <button onclick="acceptAppointment()" class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
+            <button onclick="hideAcceptModal()" class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
         </div>
     </div>
 </div>
@@ -193,8 +193,8 @@ mysqli_close($link);
     <div class="bg-white p-8 rounded-md">
         <p>Are you sure you want to decline this appointment?</p>
         <div class="flex justify-center mt-4">
-            <button onclick="declineAppointment()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
-            <button onclick="hideDeclineModal()" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">No</button>
+            <button onclick="declineAppointment()" class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
+            <button onclick="hideDeclineModal()" class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
         </div>
     </div>
 </div>
