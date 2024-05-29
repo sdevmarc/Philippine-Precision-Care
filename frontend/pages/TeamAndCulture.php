@@ -46,10 +46,10 @@
                 Our team comprises dedicated professionals committed to providing the best healthcare services. With a blend of experienced specialists and passionate young professionals, we ensure top-notch care for all our patients.
             </p>
             <ul class="list-disc pl-[1.5rem]">
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Dr. Juan Dela Cruz - Chief Medical Officer</li>
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Dr. Maria Santos - Head of Diagnostics</li>
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Nurse Ana Reyes - Lead Nurse</li>
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Mr. Mark Tan - Laboratory Manager</li>
+                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Dr. Marc Suarez - Chief Medical Officer</li>
+                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Dr. Ton Yacapin - Head of Diagnostics</li>
+                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Nurse Camille Naces - Lead Nurse</li>
+                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Mr. Melbraei Santiago - Laboratory Manager</li>
             </ul>
             <h2 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-black font-bold">Our Culture</h2>
             <p class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-justify">

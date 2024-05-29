@@ -21,19 +21,19 @@
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
         <div class="w-[70%] h-full flex justify-end items-center gap-[2rem]">
-            <a href="./home.html" class="text-[1rem] font-[400] text-black">
+            <a href="./index.php" class="text-[1rem] font-[400] text-black">
                 Home
             </a>
-            <a href="./services.html" class="text-[1rem] font-[400] text-black">
+            <a href="./Services.php" class="text-[1rem] font-[400] text-black">
                 Services
             </a>
-            <a href="./team.html" class="text-[1rem] font-[400] text-black">
+            <a href="./TeamAndCulture.php" class="text-[1rem] font-[400] text-black">
                 Team & Culture
             </a>
-            <a href="./appointment.html" class="text-[1rem] font-[400] text-black">
+            <a href="./Appointment.php" class="text-[1rem] font-[400] text-black">
                 Appointment
             </a>
-            <a href="./contact.html" class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
+            <a href="./ContactUs.php" class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
                 Contact Us
             </a>
         </div>
