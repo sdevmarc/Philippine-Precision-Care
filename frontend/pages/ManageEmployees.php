@@ -196,7 +196,7 @@
         const AddForm = document.getElementById('AddForm');
 
         function openAddForm() {
-           AddFormOverlay.style.display = 'flex';
+            AddFormOverlay.style.display = 'flex';
         }
 
         function closeAddForm() {

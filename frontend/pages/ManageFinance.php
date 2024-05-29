@@ -65,7 +65,10 @@
                     <option value="sample">Sampel Firstname</option>
                     <option value="sample">Sampel Middlename</option>
                 </select>
-                <input type="text" placeholder="Search here..." class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
+                <input type="text" placeholder="Search here..." class="w-[73%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
+                <button onclick="openAddForm()" class="w-[10%] h-[90%] bg-[#3076f0] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
+                    Add
+                </button>
             </div>
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
@@ -100,6 +103,49 @@
             </table>
         </div>
     </div>
+
+    <div id="AddFormOverlay" class="hidden absolute top-0 left-0 w-full h-screen bg-[#000] bg-opacity-[.3] flex justify-center items-center z-[1]">
+        <form id="AddForm" action="" class="relative w-[70rem] h-[35rem] bg-white rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] flex flex-col justify-start items-center">
+            <div onclick="closeAddForm()" class="absolute top-[-1rem] right-[-1rem] bg-[#9525f7] w-[3rem] h-[3rem] rounded-[50%] flex justify-center items-center text-white font-bold cursor-pointer duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
+                x
+            </div>
+            <div class="overflow-auto w-full flex flex-col gap-[1rem]  px-[1.5rem] py-[1.5rem]">
+                <h1 class="text-[1.5rem] font-[700] text-black">Add Sample</h1>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <div class="w-full flex flex-col justiy-start items-start gap-[.7rem]">
+                    <h1 class="text-black text-[1rem] font-[600]">Sample Name</h1>
+                    <input type="text" placeholder="Enter the sample..." class="w-full h-[3rem] px-[1rem] border border-black rounded-xl outline-none">
+                </div>
+                <button type="submit" class="w-full py-[.7rem] bg-[#a30000] text-white rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
+                    SUBMIT
+                </button>
+            </div>
+        </form>
+    </div>
+
     <div id="editFormOverlay" class="hidden absolute top-0 left-0 w-full h-screen bg-[#000] bg-opacity-[.3] flex justify-center items-center z-[1]">
         <form id="editForm" action="" class="relative w-[70rem] h-[35rem] bg-white rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] flex flex-col justify-start items-center">
             <div onclick="closeEditForm()" class="absolute top-[-1rem] right-[-1rem] bg-[#9525f7] w-[3rem] h-[3rem] rounded-[50%] flex justify-center items-center text-white font-bold cursor-pointer duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
@@ -145,6 +191,25 @@
     <script>
         const editFormOverlay = document.getElementById('editFormOverlay');
         const editForm = document.getElementById('editForm');
+
+        const AddFormOverlay = document.getElementById('AddFormOverlay');
+        const AddForm = document.getElementById('AddForm');
+
+        function openAddForm() {
+            AddFormOverlay.style.display = 'flex';
+        }
+
+        function closeAddForm() {
+            AddFormOverlay.style.display = 'none';
+        }
+
+        const AddButtons = document.querySelectorAll('.add-button');
+
+        AddButtons.forEach(button => {
+            button.addEventListener('click', openAddForm);
+        });
+
+
 
         function openEditForm() {
             editFormOverlay.style.display = 'flex';
