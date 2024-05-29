@@ -108,7 +108,7 @@ mysqli_close($link);
                         <th class="border border-black text-white">Last Name</th>
                         <th class="border border-black text-white">Contact Number</th>
                         <th class="border border-black text-white">Email</th>
-                        <th class="border border-black text-white">Actions</th> <!-- New column for actions -->
+                        <th class="border border-black text-white">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -126,8 +126,8 @@ mysqli_close($link);
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>" . $appointment['contact_number'] . "</td>";
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>" . $appointment['email'] . "</td>";
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>";
-                            echo "<button class='accept-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2' onclick='showAcceptModal(" . $appointment['id'] . ")'>Accept</button>";
-                            echo "<button class='decline-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded' onclick='showDeclineModal(" . $appointment['id'] . ")'>Decline</button>";
+                            echo "<button class='accept-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#3076f0] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='showAcceptModal(" . $appointment['id'] . ")'>Accept</button>";
+                            echo "<button class='decline-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#de5021] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='showDeclineModal(" . $appointment['id'] . ")'>Decline</button>";
                             
                             echo "</td>";
                             echo "</tr>";
