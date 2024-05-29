@@ -90,7 +90,15 @@ json_encode($appointments);
     <div class="w-full h-[93vh] flex flex-col justify-start items-center px-[5rem]">
         <div class="w-full h-[10%] flex justify-between items-center">
             <h1 class="my-[1rem] text-black text-[2rem] font-[700]">MANAGE APPOINTMENTS</h1>
-            <input type="text" placeholder="Search here..." class="px-[1rem] w-[60%] h-[70%] rounded-[1rem] border border-black outline-none">
+            <div class="w-[60%] h-[70%] flex justify-between items-center">
+                <select name="" id="" class="w-[15%] h-full border border-black text-[.8rem] text-center rounded-xl">
+                    <option value="sample">Sampel Lastname</option>
+                    <option value="sample">Sampel Firstname</option>
+                    <option value="sample">Sampel Middlename</option>
+                </select>
+                <input type="text" placeholder="Search here..." class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
+            </div>
+
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
             <table id="appointmentsTable" class="w-full table-fixed">
