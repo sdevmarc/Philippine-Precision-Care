@@ -98,7 +98,6 @@ json_encode($appointments);
                 </select>
                 <input type="text" placeholder="Search here..." class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
             </div>
-
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
             <table id="appointmentsTable" class="w-full table-fixed">
