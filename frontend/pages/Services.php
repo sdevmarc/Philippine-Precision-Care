@@ -20,20 +20,20 @@
         <div class="overflow-hidden w-[30%] h-full ">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
-        <div class="w-[70%] h-full flex justify-end items-center gap-[2rem]">
-            <a href="./index.php" class="text-[1rem] font-[400] text-black">
+        <div class="w-[70%] h-full flex justify-end items-center gap-[.5rem]">
+            <a href="./index.php" class="text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
                 Home
             </a>
-            <a href="./Services.php" class="text-[1rem] font-[400] text-black">
+            <a href="./Services.php" class="text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
                 Services
             </a>
-            <a href="./TeamAndCulture.php" class="text-[1rem] font-[400] text-black">
+            <a href="./TeamAndCulture.php" class="text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
                 Team & Culture
             </a>
-            <a href="./Appointment.php" class="text-[1rem] font-[400] text-black">
+            <a href="./Appointment.php" class="text-[1rem] font-[400] text-black px-[1.5rem] py-[.4rem] rounded-[1rem] duration-300 ease hover:bg-[#111] hover:bg-opacity-[.6] hover:text-white">
                 Appointment
             </a>
-            <a href="./Contact.php" class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
+            <a href="./ContactUs.php" class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
                 Contact Us
             </a>
         </div>
@@ -53,7 +53,7 @@
             </ul>
         </div>
     </div>
-    <footer class="w-full h-[20vh] bg-[#a30000] py-[2rem] px-[1rem] sm:px-[2rem] md:px-[3rem] flex flex-col justify-center items-center gap-[1rem]">
+    <footer class="w-full h-[30dvh] bg-[#a30000] py-[2rem] px-[1rem] sm:px-[2rem] md-px-[3rem] flex flex-col justify-center items-center gap-[1rem]">
         <h1 class='font-[500] text-[.5rem] sm:text-[.8rem] md:text-[1rem] text-[#fff] tracking-[.5rem] sm:tracking-[.7rem] md:tracking-[1rem]'>
             CONNECT WITH US
         </h1>
@@ -64,6 +64,7 @@
             <a href="mailto:jactubaran07@gmail.com" class="text-[#fff] text-[2rem]">
                 <EmailIcon />
             </a>
+
         </div>
         <div class="text-[#fff] text-[.5rem] sm:text-[.6rem] md:text-[.8rem] text-center">
             <p> Copyright &copy; 2024 Philippine Precision Care, All Rights Reserved.</p>
