@@ -15,3 +15,8 @@
     background: #000;
     opacity: .4;
 }
+
+.navs a.active {
+    color: white;
+    background: #333333;
+}
