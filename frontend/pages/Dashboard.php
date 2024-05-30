@@ -28,11 +28,12 @@ function isFrontdesk($role) {
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/Dashboard.css">
     <link rel="stylesheet" href="../index.css">
+   
 </head>
 
 <body>
     <header class="w-full h-[7vh] px-[10rem] flex justify-between items-center z-[2] bg-white">
-        <div class="overlow-hidden w-[30%] h-full">
+        <div class="overflow-hidden w-[30%] h-full">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
         <div class="w-[70%] h-full flex justify-end items-center gap-[2rem]">
@@ -82,10 +83,16 @@ function isFrontdesk($role) {
             </form>
         </div>
     </header>
+
     <div class="w-full h-[93vh] flex flex-col justify-center items-center gap-[1rem]">
         <h1 class="text-black font-[700] text-[5rem]">Philippine Precision Care</h1>
         <h1 class="text-black font-[700] text-[2rem]">Welcome to Dashboard!</h1>
     </div>
+
+    
+    
+
+  
 </body>
 
 </html>
