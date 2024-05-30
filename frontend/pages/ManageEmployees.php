@@ -137,7 +137,7 @@ function isFrontdesk($role) {
                         <th class="border border-black text-white">Last Name</th>
                         <th class="border border-black text-white">Email</th>
                         <th class="border border-black text-white">Position</th>
-                        <th class="border border-black text-white">Actions</th>
+                        <th class="w-[20rem] border border-black text-white">Actions</th>
                     </tr>
                 </thead>
                 <tbody>

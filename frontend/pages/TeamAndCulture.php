@@ -52,25 +52,25 @@
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Marcasd.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">Dr. Marc Edison Suarez</h1>
+                    <h1 class="text-[.9rem] font-[600]">Dr. Marc Suarez</h1>
                 </div>
-                <div class="w-[24rem] h-[20rem] flex flex-col justify-center items-center gap-[1rem]">
+                <div class="w-[24rem] h-[20rem]  flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Tonasd.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">Dr. Hamelton Yacapin</h1>
+                    <h1 class="text-[.9rem] font-[600]">Dr. Ton Yacapin</h1>
                 </div>
-                <div class="w-[24rem] h-[20rem] flex flex-col justify-center items-center gap-[1rem]">
+                <div class="w-[24rem] h-[20rem]  flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Cams.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">R.N. Camille Naces</h1>
+                    <h1 class="text-[.9rem] font-[600]">R.N. Camille Naces</h1>
                 </div>
                 <div class="w-[24rem] h-[20rem] flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Melbb.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">Mngr. Melbraei Santiago</h1>
+                    <h1 class="text-[.9rem] font-[600]">Mngr. Melbraei Santiago</h1>
                 </div>
 
 
