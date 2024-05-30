@@ -42,29 +42,29 @@
         <h1 class="text-[#c10000] font-bold text-[2rem] sm:text-[3rem] md:text-[4rem]">Our Team & Culture</h1>
         <div class="w-full flex flex-col items-start gap-[2rem]">
             <div class="w-full flex justify-evenly items-center gap-[2rem]">
-                <div class="w-[24rem] h-[27rem] flex flex-col justify-center items-center gap-[1rem]">
+                <div class="w-[24rem] h-[20rem] flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Marcasd.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">Dr. Marc Edison</h1>
+                    <h1 class="text-[.9rem] font-[600]">Dr. Marc Edison</h1>
                 </div>
-                <div class="w-[24rem] h-[27rem]  flex flex-col justify-center items-center gap-[1rem]">
+                <div class="w-[24rem] h-[20rem]  flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Tonasd.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">Dr. Ton Yacapin</h1>
+                    <h1 class="text-[.9rem] font-[600]">Dr. Ton Yacapin</h1>
                 </div>
-                <div class="w-[24rem] h-[27rem]  flex flex-col justify-center items-center gap-[1rem]">
+                <div class="w-[24rem] h-[20rem]  flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Cams.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">R.N. Camille Naces</h1>
+                    <h1 class="text-[.9rem] font-[600]">R.N. Camille Naces</h1>
                 </div>
-                <div class="w-[24rem] h-[27rem] flex flex-col justify-center items-center gap-[1rem]">
+                <div class="w-[24rem] h-[20rem] flex flex-col justify-center items-center gap-[1rem]">
                     <div class="overflow-hidden w-full h-full rounded-[50%] flex justify-center items-start">
                         <img src="../assets/Melbb.png" alt="Marc" class="object-cover w-full h-full">
                     </div>
-                    <h1 class="text-[1.5rem] font-[600]">Mr. Melbraei Santiago</h1>
+                    <h1 class="text-[.9rem] font-[600]">Mr. Melbraei Santiago</h1>
                 </div>
 
             </div>
