@@ -126,7 +126,7 @@ function isFrontdesk($role)
                 <input type="text" placeholder="Search here..."
                     class="w-[73%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
                 <button onclick="openAddForm()"
-                    class="w-[10%] h-[90%] bg-[#3076f0] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">Add</button>
+                    class="w-[10%] h-[90%] bg-[#a30000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">Add</button>
             </div>
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
