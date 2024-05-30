@@ -50,19 +50,19 @@
             <h1 class='font-bold text-[.8rem] sm:text-[1rem] md:text-[1.5rem] text-[#c10000]'>
                 About Us
             </h1>
-            <h1 class='font-bold text-[1rem] sm:text-[2rem] md:text-[2.5rem] text-black text-justify'>
+            <h1 class='font-bold text-[1rem] sm:text-[1rem] md:text-[1.5rem] text-black text-justify'>
                 The fastest-growing medical laboratory in the Philippines
             </h1>
-            <p class='w-full text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-center font-[500] text-justify'>
+            <p class='w-full text-[.6rem] sm:text-[.8rem] md:text-[1rem] text-center font-[500] text-justify'>
                 We service the laboratory requirements of up to 300 different institutions nationwide, from hospitals, to the largest clinic chains, to free-standing physician clinics. We're also the only CAP Accredited tertiary laboratory in the Philippines – putting us alongside the world’s best laboratories.</p>
             <div class="w-full px-[1rem] py-[.5rem] flex flex-col gap-[.5rem]">
-                <p class='w-full text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-center font-[500] text-justify text-ellipsis overflow-hidden'>
+                <p class='w-full text-[.6rem] sm:text-[.8rem] md:text-[1rem] text-center font-[500] text-justify text-ellipsis overflow-hidden'>
                     ✔ 6 locations across the Philippines
                 </p>
-                <p class='w-full text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-center font-[500] text-justify text-ellipsis overflow-hidden'>
+                <p class='w-full text-[.6rem] sm:text-[.8rem] md:text-[1rem] text-center font-[500] text-justify text-ellipsis overflow-hidden'>
                     ✔ Over 300 healthcare institution partners nationwide
                 </p>
-                <p class='w-full text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-center font-[500] text-justify text-ellipsis overflow-hidden'>
+                <p class='w-full text-[.6rem] sm:text-[.8rem] md:text-[1rem] text-center font-[500] text-justify text-ellipsis overflow-hidden'>
                     ✔ A CAP Accredited tertiary laboratory
                 </p>
             </div>
