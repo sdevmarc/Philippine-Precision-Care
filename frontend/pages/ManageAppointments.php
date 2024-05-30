@@ -25,26 +25,30 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($link);
 
-
 session_start();
 $user_role = $_SESSION['user_role'] ?? '';
 
-function isAdmin($role) {
+function isAdmin($role)
+{
     return in_array($role, ['admin']);
 }
 
-function isHR($role) {
+function isHR($role)
+{
     return in_array($role, ['admin', 'hr']);
 }
 
-function isFinance($role) {
+function isFinance($role)
+{
     return in_array($role, ['admin', 'finance']);
 }
 
-function isFrontdesk($role) {
+function isFrontdesk($role)
+{
     return in_array($role, ['admin', 'frontdesk']);
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,21 +72,25 @@ function isFrontdesk($role) {
                     <button class="text-[1rem] font-[400] text-black">
                         Human Resource
                     </button>
-                    <div class="hr-content absolute top-[1.5rem] w-[13rem] left-[-2rem] hidden bg-[#a30000] rounded-xl py-[.5rem] px-[.5rem]">
-                        <a href="./ManageEmployees.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <div
+                        class="hr-content absolute top-[1.5rem] w-[13rem] left-[-2rem] hidden bg-[#a30000] rounded-xl py-[.5rem] px-[.5rem]">
+                        <a href="./ManageEmployees.php"
+                            class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                             Manage Employees
                         </a>
                     </div>
                 </div>
             <?php endif; ?>
-            
+
             <?php if (isFinance($user_role)): ?>
                 <div class="hr relative">
                     <button class="text-[1rem] font-[400] text-black">
                         Finance
                     </button>
-                    <div class="hr-content absolute top-[1.5rem] w-[13rem] left-[-4rem] hidden bg-[#a30000] rounded-xl py-[.5rem] px-[.5rem]">
-                        <a href="./ManageFinance.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <div
+                        class="hr-content absolute top-[1.5rem] w-[13rem] left-[-4rem] hidden bg-[#a30000] rounded-xl py-[.5rem] px-[.5rem]">
+                        <a href="./ManageFinance.php"
+                            class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                             Manage Finance
                         </a>
                     </div>
@@ -94,8 +102,10 @@ function isFrontdesk($role) {
                     <button class="text-[1rem] font-[400] text-black">
                         Appointment
                     </button>
-                    <div class="hr-content absolute top-[1.5rem] w-[13rem] left-[-3rem] hidden bg-[#a30000] rounded-xl py-[.5rem] px-[.5rem]">
-                        <a href="./ManageAppointments.php" class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
+                    <div
+                        class="hr-content absolute top-[1.5rem] w-[13rem] left-[-3rem] hidden bg-[#a30000] rounded-xl py-[.5rem] px-[.5rem]">
+                        <a href="./ManageAppointments.php"
+                            class="text-[.9rem] font-[400] text-white font-[600] duration-300 ease hover:bg-black w-full px-[.5rem] py-[.5rem] rounded-xl text-center">
                             Manage Appointments
                         </a>
                     </div>
@@ -103,7 +113,8 @@ function isFrontdesk($role) {
             <?php endif; ?>
 
             <form action="../../backend/logout.php">
-                <button class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
+                <button
+                    class="text-[1rem] text-white font-[400] text-black bg-[#a30000] px-[1rem] py-[.3rem] duration-300 ease hover:scale-[.98] hover:opacity-[.7]">
                     Logout
                 </button>
             </form>
@@ -113,13 +124,15 @@ function isFrontdesk($role) {
         <div class="w-full h-[10%] flex justify-between items-center">
             <h1 class="my-[1rem] text-black text-[2rem] font-[700]">MANAGE APPOINTMENTS</h1>
             <div class="w-[60%] h-[70%] flex justify-between items-center">
-                <select name="" id="filterSelect" class="w-[15%] h-full border border-black text-[.8rem] text-center rounded-xl">
+                <select name="" id="filterSelect"
+                    class="w-[15%] h-full border border-black text-[.8rem] text-center rounded-xl">
                     <option value="0">Select a filter</option>
                     <option value="1">First Name</option>
                     <option value="2">Middle Name</option>
                     <option value="3">Last Name</option>
                 </select>
-                <input type="text" id="searchInput" placeholder="Search here..." class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
+                <input type="text" id="searchInput" placeholder="Search here..."
+                    class="w-[83%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
             </div>
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
@@ -162,23 +175,30 @@ function isFrontdesk($role) {
     </div>
 
     <!-- Accept Modal -->
-    <div id="acceptModal" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-50 flex justify-center items-center z-[10]">
+    <div id="acceptModal"
+        class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-50 flex justify-center items-center z-[10]">
         <div class="bg-white p-8 rounded-md">
             <p>Are you sure you want to accept this appointment?</p>
             <div class="flex justify-center mt-4">
-                <button onclick="acceptAppointment()" class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
-                <button onclick="hideAcceptModal()" class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
+                <button id="acceptYesButton"
+                    class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
+                <button onclick="hideAcceptModal()"
+                    class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
+
             </div>
         </div>
     </div>
 
     <!-- Decline Modal -->
-    <div id="declineModal" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-50 flex justify-center items-center z-[10]">
+    <div id="declineModal"
+        class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-50 flex justify-center items-center z-[10]">
         <div class="bg-white p-8 rounded-md">
             <p>Are you sure you want to decline this appointment?</p>
             <div class="flex justify-center mt-4">
-                <button onclick="declineAppointment()" class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
-                <button onclick="hideDeclineModal()" class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
+                <button onclick="declineAppointment()"
+                    class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
+                <button onclick="hideDeclineModal()"
+                    class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
             </div>
         </div>
     </div>
@@ -187,6 +207,8 @@ function isFrontdesk($role) {
         function showAcceptModal(id) {
             const modal = document.getElementById('acceptModal');
             modal.classList.remove('hidden');
+            const acceptButton = document.getElementById('acceptYesButton');
+            acceptButton.dataset.appointmentId = id;
         }
 
         function hideAcceptModal() {
@@ -204,18 +226,47 @@ function isFrontdesk($role) {
             modal.classList.add('hidden');
         }
 
-        function acceptAppointment() {
-            // Perform actions when accepting appointment, such as sending an email
-        }
+        document.getElementById('acceptYesButton').addEventListener('click', function () {
+            const appointmentId = this.dataset.appointmentId;
+            console.log("Clicked Yes on accept modal for appointment ID:", appointmentId);
 
-        function declineAppointment() {
-            // Perform actions when declining appointment
-        }
+            fetch('accept_appointment.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id: appointmentId })
+            })
+                .then(response => response.text())
+                .then(text => {
+                    console.log("Response text:", text);
+                    try {
+                        const data = JSON.parse(text);
+                        console.log("Parsed JSON response:", data);
+                        if (data.success) {
+                            alert('Appointment accepted successfully!');
+                            location.reload(); // Reload the page to update the list
+                        } else {
+                            alert('Failed to accept appointment: ' + data.message);
+                        }
+                        hideAcceptModal();
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                        alert('Failed to accept appointment due to an invalid response.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error during fetch:', error);
+                    alert('Failed to accept appointment due to a network error.');
+                });
+        });
+
+
 
         const searchInput = document.getElementById('searchInput');
         const filterSelect = document.getElementById('filterSelect');
 
-        searchInput.addEventListener('input', function() {
+        searchInput.addEventListener('input', function () {
             const filter = searchInput.value.toLowerCase();
             const filterBy = parseInt(filterSelect.value);
             const table = document.getElementById('appointmentsTable');
@@ -251,4 +302,5 @@ function isFrontdesk($role) {
         });
     </script>
 </body>
+
 </html>
