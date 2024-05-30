@@ -142,7 +142,7 @@ function isFrontdesk($role)
                         <th class="border border-black text-white">Appointment Date</th>
 
                         <th class="border border-black text-white">Billing</th>
-                        <th class="border border-black text-white">Actions</th>
+                        <th class="w-[20rem] border border-black text-white">Actions</th>
                     </tr>
                 </thead>
                 <tbody id="financeTableBody">
