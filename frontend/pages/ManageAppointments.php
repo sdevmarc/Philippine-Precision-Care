@@ -183,7 +183,7 @@ function isFrontdesk($role)
                 <button id="acceptYesButton"
                     class="bg-[#a30000] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
                 <button onclick="hideAcceptModal()"
-                    class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
+                    class="bg-[#F88379] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
 
             </div>
         </div>
@@ -198,7 +198,7 @@ function isFrontdesk($role)
                 <button onclick="declineAppointment()"
                     class="bg-[#3076f0] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded mr-2">Yes</button>
                 <button onclick="hideDeclineModal()"
-                    class="bg-[#de5021] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
+                    class="bg-[#F88379] duration-300 ease hover:scale-[.98] hover:opacity-[.6] text-white font-bold py-2 px-4 rounded">No</button>
             </div>
         </div>
     </div>

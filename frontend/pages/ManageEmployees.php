@@ -215,7 +215,7 @@ function isFrontdesk($role) {
             <p class="text-[1rem] text-center text-black">Are you sure you want to delete this employee?</p>
             <input type="hidden" name="id" id="declineEmployeeId">
             <button type="submit"
-                class="self-center w-[10rem] h-[3rem] bg-[#de5021] text-[1.2rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
+                class="self-center w-[10rem] h-[3rem] bg-[#F88379] text-[1.2rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
                 Delete
             </button>
         </form>
