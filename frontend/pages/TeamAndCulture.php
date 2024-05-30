@@ -75,21 +75,21 @@
 
 
             </div>
-            <h2 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-black font-bold mt-[4rem]">Meet Our Team</h2>
-            <p class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-justify">
+            <h2 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] text-black font-bold mt-[4rem]">Meet Our Team</h2>
+            <p class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-justify">
                 Our team comprises dedicated professionals committed to providing the best healthcare services. With a
                 blend of experienced specialists and passionate young professionals, we ensure top-notch care for all
                 our patients.
             </p>
             <ul class="list-disc pl-[1.5rem]">
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Dr. Marc Suarez - Chief Medical Officer</li>
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Dr. Ton Yacapin - Head of Diagnostics</li>
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">R.N. Camille Naces - Lead Nurse</li>
-                <li class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Mr. Melbraei Santiago - Laboratory Manager
+                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">Dr. Marc Suarez - Chief Medical Officer</li>
+                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">Dr. Ton Yacapin - Head of Diagnostics</li>
+                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">R.N. Camille Naces - Lead Nurse</li>
+                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">Mngr. Melbraei Santiago - Laboratory Manager
                 </li>
             </ul>
-            <h2 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-black font-bold">Our Culture</h2>
-            <p class="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-justify">
+            <h2 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] text-black font-bold">Our Culture</h2>
+            <p class="text-text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-justify">
                 At Philippine Precision Care, we foster a culture of excellence, empathy, and continuous learning. Our
                 team is dedicated to improving healthcare standards and delivering compassionate care to our patients.
             </p>
