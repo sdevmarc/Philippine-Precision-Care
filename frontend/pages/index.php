@@ -47,10 +47,10 @@
             <img src="https://i0.wp.com/singaporediagnostics.com/v2021/wp/wp-content/uploads/2021/08/home-2.jpg?fit=424%2C580&ssl=1" alt="Pic" class="object-cover w-full h-full">
         </div>
         <div class="w-[40%] flex flex-col justify-center items-start gap-[1rem]">
-            <h1 class='font-bold text-[.8rem] sm:text-[1rem] md:text-[1.5rem] text-[#c10000]'>
+            <h1 class='font-bold text-[1rem] sm:text-[1.5rem] md:text-[1.8rem] text-[#c10000]'>
                 About Us
             </h1>
-            <h1 class='font-bold text-[1rem] sm:text-[1rem] md:text-[1.5rem] text-black text-justify'>
+            <h1 class='font-bold text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] text-black text-justify'>
                 The fastest-growing medical laboratory in the Philippines
             </h1>
             <p class='w-full text-[.6rem] sm:text-[.8rem] md:text-[1rem] text-center font-[500] text-justify'>
