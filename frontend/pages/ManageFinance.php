@@ -125,8 +125,8 @@ function isFrontdesk($role)
                 </select>
                 <input type="text" placeholder="Search here..."
                     class="w-[73%] h-full px-[1rem] rounded-[1rem] border border-black outline-none">
-                <button onclick="openAddForm()"
-                    class="w-[10%] h-[90%] bg-[#a30000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">Add</button>
+                <!-- <button onclick="openAddForm()"
+                    class="w-[10%] h-[90%] bg-[#a30000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">Add</button> -->
             </div>
         </div>
         <div class="overflow-auto w-full h-[88%] flex flex-col justify-start items-center">
@@ -166,8 +166,8 @@ function isFrontdesk($role)
                               
                                 <td class='border border-black text-black px-[1rem] text-center truncate'>{$row['billing']}</td>
                                 <td class='border border-black text-black px-[1rem] text-center truncate'>
-                                    <button onclick='openEditForm({$row['id']})' class='edit-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#3076f0] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]'>Edit</button>
-                                    <button onclick='deleteAppointment({$row['id']})' class='delete-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#F88379] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]'>Delete</button>
+                                    <button onclick='openEditForm({$row['id']})' class='edit-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#a30000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]'>Edit</button>
+                                    <button onclick='deleteAppointment({$row['id']})' class='delete-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#3d0000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]'>Delete</button>
                                 </td>
                             </tr>";
                         }
