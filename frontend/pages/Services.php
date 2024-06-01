@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <div class="w-full h-5 bg-[#a30000] flex justify-center items-center">
+    <div class="w-full h-[3vh] bg-[#a30000] flex justify-center items-center">
         <h1 class='text-white font-extrabold text-xs tracking-widest'>
            customercare@philippineprecisioncare.com
         </h1>
     </div>
-    <header class="sticky top-0 w-full h-[5rem] px-[10rem] flex justify-between items-center z-[2] bg-white">
+    <header class="sticky top-0 w-full h-[10vh] px-[10rem] flex justify-between items-center z-[2] bg-white">
         <div class="overflow-hidden w-[30%] h-full ">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
@@ -39,10 +39,10 @@
         </div>
     </header>
     <div class="w-full py-[5rem] bg-[#ffffff] px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[20rem] flex flex-col items-center gap-[5rem]">
-        <h1 class="text-[#c10000] font-bold text-[2rem] sm:text-[3rem] md:text-[4rem]">Our Services</h1>
+        <h1 class="text-[#c10000] font-bold text-[1.5rem] sm:text-[2rem] md:text-[3rem]">Our Services</h1>
         <div class="w-full flex flex-col items-start gap-[2rem]">
             <h2 class="text-[1.3rem] sm:text-[1.5rem] md:text-[1.8rem] text-black font-bold">Appointments</h2>
-            <p class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-justify">
+            <p class="text-[.8rem] sm:text-[1rem] md:text-[1.2rem] text-justify">
                 Our facility offers comprehensive appointment services for various medical tests and consultations. Schedule your appointment online or via phone, and receive prompt, professional care at your convenience.
             </p>
             <ul class="list-disc pl-[1.5rem]">
