@@ -152,7 +152,7 @@ function isFrontdesk($role) {
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>" . $employee['position'] . "</td>";
                             echo "<td class='border border-black text-black px-[1rem] text-center truncate'>";
                             echo "<button class='accept-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#a30000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='populateEditForm(" . $employee['id'] . ", \"" . $employee['first_name'] . "\", \"" . $employee['last_name'] . "\", \"" . $employee['email'] . "\", \"" . $employee['position'] . "\")'>Edit</button>";
-                            echo "<button class='decline-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#F88379] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='showDeclineModal(" . $employee['id'] . ")'>Delete</button>";
+                            echo "<button class='decline-button px-[1.5rem] py-[.3rem] mx-[.2rem] my-[.4rem] bg-[#3d0000] text-[.9rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]' onclick='showDeclineModal(" . $employee['id'] . ")'>Delete</button>";
                             echo "</td>";
                             echo "</tr>";
                         }
@@ -215,7 +215,7 @@ function isFrontdesk($role) {
             <p class="text-[1rem] text-center text-black">Are you sure you want to delete this employee?</p>
             <input type="hidden" name="id" id="declineEmployeeId">
             <button type="submit"
-                class="self-center w-[10rem] h-[3rem] bg-[#F88379] text-[1.2rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
+                class="self-center w-[10rem] h-[3rem] bg-[#3d0000] text-[1.2rem] text-white font-[600] rounded-xl duration-300 ease hover:scale-[.98] hover:opacity-[.6]">
                 Delete
             </button>
         </form>
