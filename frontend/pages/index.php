@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <div class="w-full h-5 bg-[#a30000] flex justify-center items-center">
+    <div class="w-full h-[3vh] bg-[#a30000] flex justify-center items-center">
         <h1 class='text-white font-extrabold text-xs tracking-widest'>
             customercare@philippineprecisioncare.com
         </h1>
     </div>
-    <header class="sticky top-0 w-full h-[5rem] px-[10rem] flex justify-between items-center z-[2] bg-white">
+    <header class="sticky top-0 w-full h-[10vh] px-[10rem] flex justify-between items-center z-[2] bg-white">
         <div class="overlow-hidden w-[30%] h-full ">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
