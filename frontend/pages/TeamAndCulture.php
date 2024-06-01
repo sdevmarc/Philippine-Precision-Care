@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <div class="w-full h-5 bg-[#a30000] flex justify-center items-center">
+    <div class="w-full h-[3vh] bg-[#a30000] flex justify-center items-center">
         <h1 class='text-white font-extrabold text-xs tracking-widest'>
             customercare@philippineprecisioncare.com
         </h1>
     </div>
-    <header class="sticky top-0 w-full h-[5rem] px-[10rem] flex justify-between items-center z-[2] bg-white">
+    <header class="sticky top-0 w-full h-[10vh] px-[10rem] flex justify-between items-center z-[2] bg-white">
         <div class="overflow-hidden w-[30%] h-full ">
             <img src='../assets/logo-no-background.png' alt="Logo" class="object-contain w-full h-full">
         </div>
@@ -45,7 +45,7 @@
     </header>
     <div
         class="w-full py-[5rem] bg-[#ffffff] px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[20rem] flex flex-col items-center gap-[3rem]">
-        <h1 class="text-[#c10000] font-bold text-[2rem] sm:text-[3rem] md:text-[4rem]">Our Team & Culture</h1>
+        <h1 class="text-[#c10000] font-bold text-[1.5rem] sm:text-[2rem] md:text-[3rem]">Our Team & Culture</h1>
         <div class="w-full flex flex-col items-start gap-[2rem]">
             <div class="w-full flex justify-evenly items-center gap-[2rem]">
                 <div class="w-[24rem] h-[20rem] flex flex-col justify-center items-center gap-[1rem]">
@@ -75,21 +75,21 @@
 
 
             </div>
-            <h2 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] text-black font-bold mt-[4rem]">Meet Our Team</h2>
-            <p class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-justify">
+            <h2 class="text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] text-black font-bold mt-[4rem]">Meet Our Team</h2>
+            <p class="text-[.6rem] sm:text-[.8rem] md:text-[1.2rem] text-justify">
                 Our team comprises dedicated professionals committed to providing the best healthcare services. With a
                 blend of experienced specialists and passionate young professionals, we ensure top-notch care for all
                 our patients.
             </p>
             <ul class="list-disc pl-[1.5rem]">
-                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">Dr. Marc Suarez - Chief Medical Officer</li>
-                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">Dr. Ton Yacapin - Head of Diagnostics</li>
-                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">R.N. Camille Naces - Lead Nurse</li>
-                <li class="text-[.8rem] sm:text-[1rem] md:text-[1.3rem]">Mngr. Melbraei Santiago - Laboratory Manager
+                <li class="text-[.6rem] sm:text-[.8rem] md:text-[1.2rem]">Dr. Marc Suarez - Chief Medical Officer</li>
+                <li class="text-[.6rem] sm:text-[.8rem] md:text-[1.2rem]">Dr. Ton Yacapin - Head of Diagnostics</li>
+                <li class="text-[.6rem] sm:text-[.8rem] md:text-[1.2rem]">R.N. Camille Naces - Lead Nurse</li>
+                <li class="text-[.6rem] sm:text-[.8rem] md:text-[1.2rem]">Mngr. Melbraei Santiago - Laboratory Manager
                 </li>
             </ul>
-            <h2 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] text-black font-bold">Our Culture</h2>
-            <p class="text-text-[.8rem] sm:text-[1rem] md:text-[1.3rem] text-justify">
+            <h2 class="text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] text-black font-bold">Our Culture</h2>
+            <p class="text-[.6rem] sm:text-[.8rem] md:text-[1.2rem] text-justify">
                 At Philippine Precision Care, we foster a culture of excellence, empathy, and continuous learning. Our
                 team is dedicated to improving healthcare standards and delivering compassionate care to our patients.
             </p>
